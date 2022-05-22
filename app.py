@@ -7,10 +7,11 @@ DATABASE = os.path.join(PROJECT_ROOT, 'todo.db')
 
 app = Flask(__name__)
 # To run the project on your local machine.
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:////" + DATABASE
+#app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:////" + DATABASE
 
 # to connect the app to RDS server
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://{user}:{password}@{rds-url}:{port}/{db-name}'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:$TAEGeaf%^zdu5hgs@bahera.cxsfvyrkd79j.us-east-1.rds.amazonaws.com:3306/db_name'
 db = SQLAlchemy(app)
 
 
