@@ -16,7 +16,7 @@
 
 [*] Push the project to github
 [*] make some changes on index.html, commit changes and push the changes to your repo.
-[ ] connect the project to AWS RDS Server
-[ ] write the app dockerfile
+[*] connect the project to AWS RDS Server
+[*] write the app dockerfile
 [ ] push the image to ECR
 [ ] building and pushing the image using CircleCI
